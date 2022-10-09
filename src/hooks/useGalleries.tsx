@@ -16,8 +16,8 @@ const GalleriesProvider: React.FC<PropsWithChildren> = ({ children }) => {
       ImgurService.fetchImgur(currentSection, sort, page, window).then((response: any) => {
         setGalleries(response.data)
       })
-    } catch (error) {
-      console.log('Sorry for the error, but as soon as possible will be fixed.', error)
+    } catch {
+      throw new Error('Page Not Found 404')
     }
   }, [currentSection, sort, page, window])
 
