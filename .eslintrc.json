@@ -20,6 +20,7 @@
     "react/jsx-runtime": ["off"],
     "react/jsx-filename-extension": [0],
     "import/extensions": "off",
+    "no-param-reassign": "off",
     "prettier/prettier": [
       "error",
       {

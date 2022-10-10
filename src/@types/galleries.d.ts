@@ -4,6 +4,7 @@ export interface GalleriesContextType {
   changePage: (string) => void
   changeWindow: (string) => void
   galleries: Gallery[]
+  page: number
 }
 
 export interface Gallery {
@@ -15,11 +16,11 @@ export interface Gallery {
   views: number
   images: [
     {
+      id: number
       description: string
       link: string
-      gifv: string
-      views: number
       type: string
+      mp4: string
     }
   ]
 }

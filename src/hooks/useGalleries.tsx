@@ -59,8 +59,9 @@ const GalleriesProvider: React.FC<PropsWithChildren> = ({ children }) => {
       changePage,
       changeWindow,
       galleries,
+      page,
     }),
-    [changeCurrentSection, changeSort, changePage, changeWindow, galleries]
+    [changeCurrentSection, changeSort, changePage, changeWindow, galleries, page]
   )
 
   return <GalleryContext.Provider value={providerValues}>{children}</GalleryContext.Provider>

@@ -11,7 +11,12 @@ function DropdownMenu() {
           Section
         </button>
         <div className={styles.content}>
-          <button type="button" className={styles.content__btn} onClick={() => changeCurrentSection('hot')}>
+          <button
+            type="button"
+            className={styles.content__btn}
+            onClick={() => changeCurrentSection('hot')}
+            data-testid="section-hot"
+          >
             Hot
           </button>
           <button type="button" className={styles.content__btn} onClick={() => changeCurrentSection('top')}>
@@ -24,10 +29,15 @@ function DropdownMenu() {
       </div>
       <div className={styles.dropdown}>
         <button type="button" className={styles.dropdown__btn}>
-          Section
+          Sort
         </button>
         <div className={styles.content}>
-          <button type="button" className={styles.content__btn} onClick={() => changeSort('viral')}>
+          <button
+            type="button"
+            className={styles.content__btn}
+            onClick={() => changeSort('viral')}
+            data-testid="sort-by-viral"
+          >
             Hot
           </button>
           <button type="button" className={styles.content__btn} onClick={() => changeSort('top')}>
