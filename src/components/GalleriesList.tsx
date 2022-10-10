@@ -34,7 +34,7 @@ function GalleriesList() {
         )}
       </section>
       <div className={styles.pagination}>
-        <button type="button" className={styles.pagination__btn} onClick={() => updatePage(page - 1)}>
+        <button type="button" className={styles.pagination__btn} onClick={() => (page > 0 ? updatePage(page - 1) : '')}>
           Previous
         </button>
         <button type="button" className={styles.pagination__btn} onClick={() => updatePage(page + 1)}>
