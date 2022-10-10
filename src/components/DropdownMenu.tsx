@@ -50,7 +50,7 @@ function DropdownMenu() {
       </div>
       <div className={styles.dropdown}>
         <button type="button" className={styles.dropdown__btn}>
-          Section
+          Window
         </button>
         <div className={styles.content}>
           <button type="button" className={styles.content__btn} onClick={() => changeWindow('Day')}>

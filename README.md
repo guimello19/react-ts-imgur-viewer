@@ -44,3 +44,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+### Information about the project
+
+This project use [Imgur API](https://api.imgur.com/) and its [documentation] (https://apidocs.imgur.com/). However, I encounted many API limitations while creating this solution and some configurations weren't as described in the documentation... 
+
+To run the application you need to [register your application here](https://api.imgur.com/oauth2/addclient), then update your .env (remember, copy .env.example and rename to .env) file with your credentials, we are using only Anonymous usage without user authorization here.
+
+After get your Client-ID and update the .env you can just use `yarn start`.
+
+## Features
+
+The CSS architecture is simple, for this specific case, mobile first wasn't required.
+
+The user can filter options "section", "sort" and "window" on the top menu; back to the top with an arrow in the corner of the page  and changing pages in the end of the application.
+
+Tests aren't finished, but a simple case was written to check if the app renders. 
